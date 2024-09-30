@@ -1,0 +1,348 @@
+/* Base Format*/
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: offwhite;
+    margin: 0;
+    padding: 0;
+}
+/* Background */
+html {
+    background-color:#F1F1F1;
+    scroll-behavior: smooth;
+}
+/* top menu start */
+.main-header {
+    position: fixed;
+    top: 0; /* Stick to the top */
+    left: 0;
+    width: 100%; /* Full width of the page */
+    z-index: 1000; /* Ensures it's on top of other elements */
+  
+}
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color:rgb(233, 186, 229);
+    text-decoration: none;
+    border: 2px whitesmoke solid;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 1px rgb(255, 255, 255) solid; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgb(63, 60, 60);
+}
+/* top menu end */
+/* Intro start */
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    padding-top: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+.back-ground-header-img {
+    background-image: linear-gradient(to bottom,
+     rgba(64, 51, 51, 0) 87%, #ffffff 100%), url('images/mountFuji.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust height as needed */
+    position: relative;
+    z-index: 1; /* Ensure it is behind the content */
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px; 
+    padding: 10px;
+    border: 5px solid rgb(76, 171, 203);
+    border-radius: 15px;
+    background-color: white;
+}
+/* my name */
+.name {
+    font-size: 4em;
+    color: rgb(76, 171, 203);
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: left; 
+    padding-left: 150px;
+}
+
+/* contact me button */
+
+
+/* pic of me */
+
+.intro-image {
+    flex: 0.5;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border: 5px rgb(76, 171, 203) solid; 
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contact Me Button Styles */
+.contact-me-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Space between buttons */
+    flex-wrap: nowrap; /* Prevent wrapping to new line */
+    padding-top: 10px;
+}
+
+.contact-button {
+    background-color: rgb(76, 171, 203);
+    color: white;
+    padding: 15px 20px; /* Reduced padding for better fit */
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block; /* Ensure buttons are inline */
+    
+}
+
+
+.contact-button:hover {
+    background-color: rgb(63, 60, 60);
+    transform: translateY(-5px);
+}
+
+
+.content-section {
+    margin: 1em;
+    text-align: center;
+    color: rgb(76, 171, 203);
+}
+
+.container {
+    margin: auto;
+}
+/* intro end */
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.skills {
+    max-width: 1200px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-title {
+    font-size: 2em;
+    padding-bottom: 20px;
+    padding-top:100px;
+    color: rgb(76, 171, 203);
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-icon {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(76, 171, 203);
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+}
+
+.projects {
+    max-width: 1200px;
+    text-align: center;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 20px;
+    padding-top: 200px;
+    color: rgb(76, 171, 203);
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.skills-list li:hover{
+    transform: translateY(-3px);
+}
+
+.project-header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    height: 100px; 
+}
+
+.project-header img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.project-details h3 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(76, 171, 203);
+   
+}
+.project-details span {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.project-description {
+    margin: 15px 0;
+    font-size: .7em;
+    color: #555;
+}
+/* project end */
+/* socials start */
+.socials-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.socials{
+    max-width: 1200px;
+    text-align: center;
+    padding-top: 20px;
+   
+}
+.socials-title{
+    font-size: 2em;
+    padding-bottom: 20px;
+    padding-top: 200px;
+    color: rgb(76, 171, 203);
+}
+.socials-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.socials-card{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;  
+}
+.socials-card:hover{
+    transform: translateY(-5px);
+}
+.socials-icon{
+    width: 50px;
+    
+    margin-bottom: 10px;
+}
+.socials-icon-gmail{
+    width: 50px;
+    padding-bottom: 13px;
+    margin-bottom: 10px;
+}
+.socials-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(76, 171, 203);
+}
+/*  socials end*/
+.project-display{
+    width: 250px;
+}
+.project-link{
+    text-decoration: none;
+}
