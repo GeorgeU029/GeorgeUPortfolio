@@ -144,3 +144,21 @@
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav a, .nav button {
+    font-size: 1em; /* Smaller font */
+    padding: 10px;
+  }
+
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+

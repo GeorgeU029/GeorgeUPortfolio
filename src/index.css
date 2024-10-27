@@ -1,12 +1,25 @@
-/* index.css */
+/* Base Styles */
+.body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: linear-gradient(181deg, rgb(15 21 27), rgb(13 25 41));
+  height: 100%;
+  z-index: 100;
+}
+
+#root {
+  min-height: 100vh;
+  background: none; /* Remove the additional gradient here */
+}
 
 /* Reset some browser-specific default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-
 }
 
 body {
@@ -14,7 +27,6 @@ body {
   background: linear-gradient(181deg, rgb(15 21 27), rgb(13 25 41));
   color: rgb(0, 0, 0);
   scroll-behavior: smooth;
-
 }
 
 /* Basic container settings */
@@ -40,7 +52,7 @@ a:hover {
   color: rgb(76, 171, 203);
 }
 
-/* Section-specific styles (if needed) */
+/* Section-specific styles */
 .section {
   padding: 60px 0;
 }
@@ -50,4 +62,32 @@ a:hover {
   text-align: center;
   color: rgb(76, 171, 203);
   margin-bottom: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* General adjustments for smaller screens */
+  .body, body {
+    font-size: 0.9em; /* Slightly smaller font for mobile */
+    background: linear-gradient(181deg, rgb(15, 21, 27), rgb(13, 25, 41));
+  }
+
+  .container {
+    max-width: 95%; /* Use almost full width for mobile */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .section {
+    padding: 30px 0; /* Less padding on top and bottom */
+  }
+
+  .section-title {
+    font-size: 1.8em; /* Adjust font size */
+    margin-bottom: 20px; /* Reduce bottom margin */
+  }
+
+  /* Links and buttons */
+  a {
+    font-size: 1em; /* Slightly smaller font for links */
+  }
 }

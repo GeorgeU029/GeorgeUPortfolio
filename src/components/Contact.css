@@ -69,3 +69,24 @@
   font-weight: bold;
   color: rgb(112, 164, 228);
 }
+@media (max-width: 768px) {
+  .socials-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .socials {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .socials-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .socials-card {
+    width: 100%; /* Full width for smaller screens */
+    padding: 20px;
+  }
+}

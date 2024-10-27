@@ -66,3 +66,18 @@
   font-weight: bold;
   color: rgb(112, 164, 228);
 }
+@media (max-width: 768px) {
+  .skills {
+    padding: 20px;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skill-card {
+    width: 100%; /* Full width */
+    padding: 20px;
+  }
+}
