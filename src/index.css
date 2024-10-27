@@ -1,13 +1,53 @@
-body {
+/* index.css */
+
+/* Reset some browser-specific default styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(181deg, rgb(15 21 27), rgb(13 25 41));
+  color: rgb(0, 0, 0);
+  scroll-behavior: smooth;
+
+}
+
+/* Basic container settings */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Root element adjustments */
+#root {
+  min-height: 100vh;
+}
+
+/* Links styling for consistency */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: rgb(76, 171, 203);
+}
+
+/* Section-specific styles (if needed) */
+.section {
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgb(76, 171, 203);
+  margin-bottom: 40px;
 }

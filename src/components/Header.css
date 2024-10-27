@@ -1,0 +1,146 @@
+/* Header.css */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: rgba(28, 36, 58, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 20px; /* Reduced padding for a thinner nav bar */
+}
+
+.nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav li {
+  padding: 0 15px; /* Reduced padding for better spacing */
+}
+
+.nav a {
+  color: rgb(173, 215, 255);
+  text-decoration: none;
+  padding: 5px 10px; /* Reduced padding for a slimmer look */
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  font-size: 1em;
+}
+.nav button {
+  background: none;
+  border: none;
+  color: rgb(173, 215, 255);
+  font: inherit;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.nav a:hover {
+  background-color: rgba(173, 215, 255, 0.2);
+  color: rgb(255, 255, 255);
+}
+
+.nav a.active {
+  background-color: rgba(52, 68, 92, 0.8);
+  color: #ffffff;
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 50px; /* Slightly smaller width to help reduce nav height */
+  height: 50px; /* Slightly smaller height */
+  border: 2px solid rgb(112, 164, 228); /* Added border to match the color scheme */
+  border-radius: 50%; /* Rounded border to give a polished look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.logo-text {
+  font-size: 1.5em; /* Slightly smaller font size */
+  color: rgb(173, 215, 255);
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(28, 36, 58, 0.95);
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+
+  .nav li {
+    padding: 15px 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(173, 215, 255);
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.open div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.open div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
