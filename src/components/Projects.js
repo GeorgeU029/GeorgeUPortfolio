@@ -12,8 +12,8 @@ const Projects = () => {
     },
     {
       title: 'League Stats',
-      link: 'https://github.com/GeorgeU029/LeagueStats',
-      image: 'images/Screenshot 2024-10-26 at 3.32.24 PM.png',
+      link: 'https://myleagueoflegendsstats.netlify.app/',
+      image: 'images/Screenshot 2024-11-14 at 6.02.27 PM.png',
       description: 'Developed a responsive League of Legends stats website using a Python backend with Flask and a React frontend to fetch and display real-time match and player statistics through API integration'
     }
   ];

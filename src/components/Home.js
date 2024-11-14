@@ -29,7 +29,7 @@ const Home = () => {
           </section>
           <div className="contact-me-container">
             <a href="mailto:Georgeulloa.fl@gmail.com" className="contact-button">Contact Me</a>
-            <a href="/images/George UlloaRESUME .pdf" className="contact-button">Resume</a>
+            <a href="/images/George--Ulloa--RESUME .pdf" className="contact-button">Resume</a>
           </div>
         </div>
         <div className="intro-image">
